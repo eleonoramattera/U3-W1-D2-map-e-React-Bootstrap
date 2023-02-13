@@ -1,17 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./App.css";
-import AllTheBooks from "./components/AllTheBooks";
+
 import CustomNav from "./components/CustomNav";
 import Jumbotron from "./components/Jumbotron";
 import MyFooter from "./components/MyFooter";
+import BookList from "./components/BookList";
+import romance from "./data/romance.json";
 
 function App() {
   return (
     <>
       <CustomNav />
       <Jumbotron />
-      <AllTheBooks />
+      <BookList libri={romance} />
+      {/* <AllBook /> */}
       <MyFooter />
     </>
   );
