@@ -5,8 +5,8 @@ const AllTheBooks = () => {
   return (
     <Container style={{ width: "100%" }}>
       <Row>
-        <Col xs={12} md={4}>
-          {romance.map((libro, index) => (
+        {romance.map((libro, index) => (
+          <Col xs={12} md={4}>
             <Card style={{ width: "18rem" }} key={`libro-${index}`}>
               <Card.Img variant="top" src={libro.img} />
               <Card.Body>
@@ -14,8 +14,8 @@ const AllTheBooks = () => {
                 <Card.Text>{libro.category}</Card.Text>
               </Card.Body>
             </Card>
-          ))}
-        </Col>
+          </Col>
+        ))}
       </Row>
     </Container>
   );

@@ -4,16 +4,15 @@ import "./App.css";
 import CustomNav from "./components/CustomNav";
 import Jumbotron from "./components/Jumbotron";
 import MyFooter from "./components/MyFooter";
-import BookList from "./components/BookList";
-import romance from "./data/romance.json";
+import AllTheBooks from "./components/AllTheBooks";
 
 function App() {
   return (
     <>
       <CustomNav />
       <Jumbotron />
-      <BookList libri={romance} />
-      {/* <AllBook /> */}
+      {/*<BookList libri={romance} />*/}
+      <AllTheBooks />
       <MyFooter />
     </>
   );
