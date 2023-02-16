@@ -11,7 +11,6 @@ function App() {
     <>
       <CustomNav />
       <Jumbotron />
-      {/*<BookList libri={romance} />*/}
       <AllTheBooks />
       <MyFooter />
     </>
